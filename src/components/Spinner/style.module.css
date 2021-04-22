@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+    .spin {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        animation: rolling 600ms linear infinite;
+
+        @keyframes rolling {
+            0%   { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @apply border-blue-600
+    }
+
+    
+} 

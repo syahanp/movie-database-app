@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+    .background {
+        height: 330px;
+        background:linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../../assets/img/header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+        @apply w-screen
+    }
+
+    
+} 
