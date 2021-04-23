@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom';
 import { useDetectClickOutsideElement, useSearchBoxHandler } from '../../hooks';
 
 const SearchBox:React.FC = () => {
@@ -32,9 +33,11 @@ const SearchBox:React.FC = () => {
                     {
                         data.map((x:any) => {
                             return (
-                                <div className="truncate py-2 px-6 text-lg text-gray-700 cursor-pointer hover:bg-gray-100">
-                                    {x.Title}
-                                </div>
+                                <Link to={`/movie?id=${x.imdbID}`}>
+                                    <div className="truncate py-2 px-6 text-lg text-gray-700 cursor-pointer hover:bg-gray-100">
+                                        {x.Title}
+                                    </div>
+                                </Link>
                             )
                         })
                     }
