@@ -5,7 +5,7 @@ import Container from '../Container'
 import Movie from '../Movie'
 import Spinner from '../Spinner'
 
-const MovieList:React.FC= () => {
+const MovieList:React.FC = () => {
     const queryValue = useSelector((state:any) => state.searchQuery);
     const { data, isLoading, error, hasMore, fetchMore } = useQueryMovieList(queryValue)
 

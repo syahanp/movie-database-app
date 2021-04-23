@@ -4,7 +4,7 @@ import { setModalPoster } from '../../redux/actions';
 
 interface Props {
     src: string
-    className: string
+    className?: string
 }
 
 const Poster:React.FC<Props> = ({ src, className }) => {
