@@ -8,6 +8,7 @@ This project bootstrapped with :
 - [Webpack](https://webpack.js.org/)
 - [Babel](https://babeljs.io/)
 - [Jest](https://jestjs.io/)
+- [TailwindCSS](https://tailwindcss.com)
 
 ## Available Scripts
 
